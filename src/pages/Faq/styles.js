@@ -45,3 +45,70 @@ export const SearchBar = styled.section`
     }
   }
 `;
+export const Infos = styled.table`
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+
+  thead {
+    background: ${colors.blue};
+
+    td {
+      padding: 3px;
+      button {
+        display: flex;
+        align-items: center;
+        background: ${colors.blue};
+        border: 0;
+        margin-right: -40px;
+        color: #fff;
+        font-weight: bold;
+
+        svg {
+          margin: 0 5px;
+        }
+      }
+    }
+
+    th {
+      padding: 18px;
+
+      & + th {
+        border-left: 1px solid #fff;
+        text-align: center;
+      }
+    }
+
+    th:first-child {
+      border-radius: 12px 0 0 12px;
+    }
+    th:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+  }
+
+  tbody {
+    background: #fff;
+    color: ${colors.black};
+    tr {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      td {
+        padding: 12px;
+        button {
+          background: #fff;
+          border: 0;
+        }
+
+        span {
+          font-weight: bold;
+        }
+
+        & + td {
+          text-align: center;
+        }
+      }
+    }
+  }
+`;
