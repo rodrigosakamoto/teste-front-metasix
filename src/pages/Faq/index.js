@@ -1,3 +1,7 @@
-import styled from 'styled-components';
+import React from 'react';
 
-export const Container = styled.div``;
+import { Container } from './styles';
+
+export default function Faq() {
+  return <Container />;
+}
